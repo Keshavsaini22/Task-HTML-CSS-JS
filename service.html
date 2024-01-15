@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="service.css">
+    <style>
+        .hero {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .serv {
+            font-size: 70px;
+            font-weight: bold;
+            color: #F5771B;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .line {
+            font-size: 40px;
+            padding: 10px;
+        }
+
+        .desc {
+            width: 70%;
+            font-size: 20px;
+            display: flex;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgb(71, 68, 68);
+            width: 300px;
+            max-height: 350px;
+        }
+
+        .img {
+            width: 80%;
+        }
+
+        .img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .topic {
+            color: #F5771B;
+            font-weight: bold;
+            font-size: 19px;
+            text-align: center;
+        }
+
+        .proinfo {
+            padding: 5px;
+            display: flex;
+            text-align: center;
+        }
+
+        .btn button {
+            width: 100px;
+            height: 30px;
+            font-size: 15px;
+            background-color: #F5771B;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 750px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .card {
+                width: 250px;
+                height: 250px;
+            }
+
+            .img {
+                width: 60%;
+            }
+
+            .btn button {
+                width: 80px;
+                height: 20px;
+                font-size: 13px;
+                border-radius: 5px;
+            }
+
+            .serv {
+                font-size: 40px;
+            }
+
+            .line {
+                font-size: 30px;
+                padding: 10px;
+            }
+
+            .desc {
+                width: 70%;
+                font-size: 14px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>PraRoz</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="service.html" target="_blank">Service</a></li>
+                <li><a href="design.html" target="_blank">Design</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+
+            </ul>
+        </div>
+        <div class="search">
+            <div class="ser"><input type="text" placeholder="Type to Search">
+                <button class="ser-btn">Search</button>
+            </div>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="info">
+            <div class="serv">Services</div>
+            <div class="line">How we can be useful</div>
+            <div class="desc">We design and build high performance and scalability software, always using cutting-edge
+                technology that allows us to deliver value quickly. Working with industry best practices and use of
+                agile and scrum software development methodologies, we ensure that the development process bonds
+                seamlessly with your internal procedures</div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="img"><img src="https://zenmonk.tech/images/cloud/services_webdevelopment.png" alt=""></div>
+                <div class="topic">Product Development</div>
+                <div class="proinfo">A design process based on best practices</div>
+                <div class="btn"><button>See details</button></div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="https://zenmonk.tech/images/cloud/services_itprojects.png" alt=""></div>
+                <div class="topic">IT Projects</div>
+                <div class="proinfo">Consulting & Management</div>
+                <div class="btn"><button>See details</button></div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="https://zenmonk.tech/images/cloud/services_microservices2.png" alt=""></div>
+                <div class="topic">Microservices</div>
+                <div class="proinfo">Architecture & Engineering</div>
+                <div class="btn"><button>See details</button></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
