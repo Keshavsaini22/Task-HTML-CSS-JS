@@ -51,12 +51,12 @@
         </div>
 
         <div class="form">
-            <form action="" method="get">
+            <form action="" method="get" onsubmit="myfunc(event)">
                 <div class="innerform">
                     <div class="log">Login Here</div>
                     <div class="input">
-                        <input type="text" placeholder="Enter Email Here">
-                        <input type="password" name="" id="" placeholder="Enter Password Here">
+                        <input type="text" id="mailid" placeholder="Enter Email Here">
+                        <input type="password" name="" id="passid" placeholder="Enter Password Here">
                         <button type="submit" id="login" class="log">Login</button>
                     </div>
                     <div class="signdec">
@@ -76,6 +76,23 @@
         </div>
 
     </section>
+    <script>
+        function myfunc(event){
+            event.preventDefault();
+            let mailid=document.getElementById("mailid").value;
+            let passid=document.getElementById("passid").value;
+            const mydata={
+                email:mailid,
+                password:passid
+            };
+            savemydata(mydata);
+        }
+        function savemydata(mydata){
+            const storedata=JSON.parse(localStorage.getItem('mydata')) || [];
+            storedata.push(mydata);
+            localStorage.setItem('mydata',JSON.stringify(storedata));
+        }
+    </script>
 </body>
 
 </html>
